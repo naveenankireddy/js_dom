@@ -1,6 +1,18 @@
 var quotes;
 
 // Write your code here
+let newarr = function(event) {
+    if(event.keyCode === 32){
+        let max = quotes.length-1;
+        var mathRandom = Math.floor(Math.random() * max) +1 ;
+        console.log(quotes[mathRandom]);
+        document.querySelector('p').textContent = quotes[mathRandom].quoteText;
+        document.querySelector('h2').textContent=quotes[mathRandom].quoteAuthor;
+        return ;
+    }
+}
+document.body.addEventListener('keydown', newarr);
+
 
 
 

@@ -38,6 +38,17 @@
     const h1 = document.getElementsByTagName("h1")[0];
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
-    // Your code goes here
+    ul.firstElementChild.style.backgroundColor = "green";
+    let all = document.querySelectorAll('li');
+    all.forEach(x => x.style.backgroundColor = "red");
+    let lastLi = document.querySelectorAll('li');
+    // lastLi.style.backgroundColor = "pink";
+   lastLi[2].style.backgroundColor = "pink";
+   let middleLi = lastLi[1];
+   middleLi.previousElementSibling.style.backgroundColor = "coral";
+   middleLi.nextElementSibling.style.backgroundColor = "aquamarine";
+
+
+       // Your code goes here
   </script>
 </html>
